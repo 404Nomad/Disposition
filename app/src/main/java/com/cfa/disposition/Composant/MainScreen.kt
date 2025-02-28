@@ -19,6 +19,7 @@ fun MainScreen(
     ) {
         //forcer espace au dessus et en dessous
         Spacer(Modifier.height(16.dp))
+        SearchBar()
         Text("en attendant les composants")
         Spacer(Modifier.height(16.dp))
     }
