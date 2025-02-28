@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.cfa.disposition.Composant.AppMain
 import com.cfa.disposition.ui.theme.DispositionTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,8 +19,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            AppMain()
 
         }
     }
 }
 
+@Preview
+@Composable
+fun ActivityPreview(){
+    AppMain()
+}
